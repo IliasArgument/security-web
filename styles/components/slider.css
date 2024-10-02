@@ -69,6 +69,22 @@
   background-color: black !important;
 }
 
+.slider-card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.slider-card-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: var(--size-xl);
+  color: var(--color-dark);
+  line-height: 25px;
+  letter-spacing: -0.015em;
+
+}
+
 @media screen and (max-width: 768px) {
   .slider {
     top: 20px;

@@ -74,13 +74,15 @@
   aspect-ratio: 1;
   padding-left: 8px;
   color: var(--color-dark);
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: var(--color-light);
   border: var(--border-dark);
   border-radius: 50%;
+  z-index: 15;
 }
 
 .header-burger-button:hover {
-  color: var(--color-darks);
+  /* color: var(--color-darks); */
   border-color: currentColor;
 }
 

@@ -3,10 +3,10 @@
   border: 1px solid red;
   left: 0;
   top: 0;
-  z-index: 999;
+  z-index: 10;
   width: 100%;
   height: 100%;
-  background-color: var(--color-dark);
+  background-color: var(--color-dark-gray);
   display: none;
   justify-content: center;
   align-items: center;
@@ -22,10 +22,10 @@
   gap: 1rem;
 }
 .mobile-nav__link {
-  font-size: var(--size-2xl);
+  font-size: var(--size-3xl);
   text-decoration: none;
-  font-weight: 600;
-  color: var(--color-slate600);
+  font-weight: 700;
+  color: var(--color-light);
   letter-spacing: var(--ls-tiny);
   transition: color 0.3s;
 }

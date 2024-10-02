@@ -98,12 +98,12 @@
 
 @media screen and (max-width: 475px) {
   .advantages-item-img img {
-    width: 40%;
+    width: 50px;
     min-height: 100%;
     object-fit: contain;
   }
   .advantages-item-title {
-    line-height: 14px;
+    line-height: 20px;
   }
 
   .advantages-item-description {
