@@ -1,0 +1,132 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  padding-top: 4rem;
+}
+
+.hero-title {
+  text-transform: uppercase;
+  font-size: var(--size-8xl);
+}
+.hero-pre-title {
+  display: inline-block;
+  font-size: var(--size-2xl);
+  line-height: 1.45;
+  font-weight: 600; 
+  color:var(--color-yellow);
+  background: var(--color-blue);
+  padding: 10px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.hero-description {
+  text-transform: uppercase;
+  font-size: var(--size-3xl);
+  line-height: 1.25;
+  display: inline-block;
+  text-align: left;
+}
+.hero-title-block {
+  margin-top: 2rem; 
+}
+
+.hero-image-block {
+  max-width: 776px;
+  width: 100%;
+  height: 559px;
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  top: 16px;
+  z-index: -1;
+  right: 0;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1536px) {
+}
+
+@media screen and (max-width: 1170px) {
+  .hero-image-block {
+    height: 500px;  
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .hero-title {
+    font-size: var(--size-7xl);
+  }
+  .hero-description {
+    font-size: var(--size-2xl);
+  }
+  .hero-image-block {
+    height: 450px;  
+  }
+}
+
+@media screen and (max-width: 886px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .hero-image-block {
+    height: auto;
+    padding-top: 32px;
+    position: static;
+  }
+
+  .hero-image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    position: static;
+  }
+
+  .hero-title-block {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .hero-pre-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-description {
+    font-size: var(--size-2xl);
+    text-align: center;
+  }
+  .hero-title {
+    font-size: var(--size-6xl);
+  }
+  .hero-pre-title {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 475px) {
+  .hero {
+    margin-top: 2rem;
+  }
+  .hero-description {
+    font-size: var(--size-xl);
+  }
+  .hero-title {
+    font-size: var(--size-5xl);
+  }
+}
+
+
