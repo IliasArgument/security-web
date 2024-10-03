@@ -35,7 +35,6 @@
 }
 .contacts__form-textarea{
   margin-bottom: 30px;
-
 }
 .contacts__form-btn{
   display: flex;
@@ -108,4 +107,11 @@
     .constcts-form-subtitle {
       font-size: var(--size-base);
     }    
+
+    .contacts__form-input{
+      margin-bottom: 20px;
+    }
+    .contacts__form-textarea{
+      margin-bottom: 20px;
+    }
 }

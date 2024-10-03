@@ -97,4 +97,7 @@
   .services {
     padding: 50px 0;
   }
+  .services-title {
+    margin-bottom: 30px;
+  }
 }
