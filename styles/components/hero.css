@@ -31,7 +31,7 @@
   text-align: left;
 }
 .hero-title-block {
-  margin-top: 2rem; 
+  margin-top: 3rem; 
 }
 
 .hero-image-block {
@@ -115,12 +115,12 @@
 
 @media screen and (max-width: 640px) {
   .hero {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 @media screen and (max-width: 475px) {
   .hero {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
   .hero-description {
     font-size: var(--size-xl);

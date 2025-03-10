@@ -10,19 +10,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
 }
 
 .header-contacts {
   display: flex;
   align-items: center;
   column-gap: 20px;
+  /* margin-bottom: 1rem; */
 }
 
 .header-logo {
-  flex-shrink: 0; /* элемент не будет уменьшаться по размеру */
+  flex-shrink: 0;
+  /* элемент не будет уменьшаться по размеру */
   height: var(--header-height);
   align-items: center;
-  display: flex; 
+  display: flex;
+}
+
+.header-logo-image {
+  width: 135px;
+  height: 135px;
+  position: absolute;
+  top: 1rem;
 }
 
 .header__phone {
@@ -38,6 +49,7 @@
 }
 
 .header-menu-link {
+  position: relative;
   display: inline-flex;
   align-items: center;
   column-gap: 7px;
@@ -50,10 +62,15 @@
 
 .header-menu-link.is-current::after {
   content: "";
+  position: absolute;
   width: 5px;
+  height: auto;
+  left: 100%;
+  transform: translateX(10px);
   aspect-ratio: 1;
   background-color: currentColor;
   border-radius: 50%;
+  pointer-events: none; /* Не мешает кликам */
 }
 
 .header-actions {
@@ -63,7 +80,7 @@
 
 
 .header-burger-button {
-   position: fixed;
+  position: fixed;
   top: 2rem;
   right: 2rem;
   display: inline-flex;
@@ -96,15 +113,17 @@
 }
 
 /* 2xl */
-@media screen and (max-width: 1536px) {
-}
+@media screen and (max-width: 1536px) {}
 
 /* xl */
-@media screen and (max-width: 1280px) {
-}
+@media screen and (max-width: 1280px) {}
 
 /* lg */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+  .header-menu-list {
+    column-gap: 25px;
+  }
+}
 
 /* md */
 @media screen and (max-width: 768px) {
@@ -112,6 +131,7 @@
   .header-actions {
     display: flex;
   }
+
   .header-menu-list {
     display: none;
   }
@@ -121,13 +141,24 @@
   }
 }
 
+/* sm */
+@media screen and (max-width: 640px) {
+  .header-logo {
+    margin-top: 1rem;
+  }
+
+  .header-logo-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 /* xs */
 @media screen and (max-width: 475px) {
   .header-burger-button {
     right: 1rem;
   }
-}
-
-/* sm */
-@media screen and (max-width: 640px) {
+  .header-contacts {
+    padding-top: .5rem;
+  }
 }

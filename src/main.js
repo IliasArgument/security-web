@@ -1,5 +1,4 @@
-import mobileNavFunction from './util/mobile-nav.js';
-
+import mobileNavFunction from "./util/mobile-nav.js";
 
 mobileNavFunction();
 
@@ -12,55 +11,54 @@ const swiper = new Swiper(".mySwiper", {
   loop: true,
 
   autoplay: {
-      delay: 2000,
+    delay: 2000,
   },
   pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+    el: ".swiper-pagination",
+    clickable: true,
   },
   breakpoints: {
-      320: {
-          slidesPerView: "auto",
-          spaceBetween: 15,
-          centeredSlides: true,
-      },
-      640: {
-          spaceBetween: 35,
-          centeredSlides: true,
-      },
+    320: {
+      slidesPerView: "auto",
+      spaceBetween: 15,
+      centeredSlides: true,
+    },
+    640: {
+      spaceBetween: 35,
+      centeredSlides: true,
+    },
   },
 });
 
 const serviceSwiper = new Swiper(".services__swiper", {
   spaceBetween: 24,
   navigation: {
-      nextEl: ".service-swiper-button-next",
-      prevEl: ".service-swiper-button-prev",
+    nextEl: ".service-swiper-button-next",
+    prevEl: ".service-swiper-button-prev",
   },
   breakpoints: {
-      320: {
-          slidesPerView: 1,
-          spaceBetween: 24,
-          centeredSlides: true,
-      },
-      768: {
-          slidesPerView: 2,
-          spaceBetween: 40,
-      },
-      991: {
-          slidesPerView: 3,
-          spaceBetween: 24,
-      },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      centeredSlides: true,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    991: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
 
-      1140: {
-          slidesPerView: 3,
-      },
-      1300: {
-          slidesPerView: 4,
-      },
+    1140: {
+      slidesPerView: 3,
+    },
+    1300: {
+      slidesPerView: 4,
+    },
   },
 });
-
 
 // const swiper_ = new Swiper('.swiper', {
 //   // Optional parameters
@@ -83,3 +81,24 @@ const serviceSwiper = new Swiper(".services__swiper", {
 //     el: '.swiper-scrollbar',
 //   },
 // });
+
+// header links
+const setActiveLink = () => {
+    const links = document.querySelectorAll(".header-menu-link");
+  
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        const currentActive = document.querySelector(".is-current");
+  
+        if (currentActive) {
+          currentActive.classList.remove("is-current");
+        }
+  
+        link.classList.add("is-current");
+      });
+    });
+  };
+  
+  setActiveLink();
+  
+  
