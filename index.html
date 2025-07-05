@@ -4,9 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Охорона фірма Стрілець</title>
   <link rel="stylesheet" href="./styles/styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon//favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <title>Охорона фірма Стрілець</title>
+  <meta property="og:title"
+    content="Охоронна компанія «Стрілець» • Послуги приватної охоронної фірми • Всі послуги охорони">
+  <meta property="og:description"
+    content=" «Стрілець» ➤ Охорона об'єктів ✅ Супровід вантажів ⚡ Пультова охорона ❗ Контроль доступу.">
+  <meta property="og:image" content="images/image-to-meta.jpg" />
+  <!-- <meta property="og:url" content="https://example.com" /> -->
+  <meta property="og:type" content="website" />
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
@@ -15,14 +27,16 @@
   <header class="header container">
     <div>
       <div class="header-contacts">
-        <a href="tel:+380932999636" class="header__phone header__contacts--onMobile">+380 93 2999 636</a>
-        <a href="https://t.me/IIgore4ek"><img src="https://sheriff.com.ua/icons/telegram_logo.svg" alt="" /></a>
+        <a href="tel:+380932999636" class="header__phone">+380 93 2999 636</a>
+        <a href="https://t.me/IIgore4ek" target="_blank"><img src="https://sheriff.com.ua/icons/telegram_logo.svg"
+            alt="Telegram" class="header__icon-tg" /></a>
       </div>
     </div>
     <div class="header-container">
       <a class="header-logo" href="/">
-        <img class="header-logo-image" src="icons/logo-header.svg" alt="Security Logo" 
-          loading="lazy" />
+        <!-- <img class="header-logo-image" src="icons/logo-header.svg" alt="Security Logo" loading="lazy" /> -->
+        <img class="header-logo-image" src="images/logo-hdh.webp" alt="Security Logo" loading="lazy" />
+
       </a>
       <nav class="header-menu">
         <ul class="header-menu-list">
@@ -98,23 +112,45 @@
           <div class="slider__card swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group"
             aria-label="1 / 5">
             <div class="slider-card-body">
-              <p class="slider-card-title"> Отримуйте безпеку зараз, сплачуйте без % - потім. </p>
+              <div class="slider-card">
+                <img src="images/carousel/montaj-doma.jpg" alt="Охорона примiщень´и монтаж" class="slider-image">
+                <p class="slider-card-title">Охорона приміщень та об'єктів</p>
+              </div>
             </div>
           </div>
           <div class="slider__card swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 5">
             <div class="slider-card-body">
-              <p class="slider-card-title"> Сплачуйте тільки абонплату! Обладнання і монтаж безкоштовно! </p>
+              <div class="slider-card">
+                <img src="images/carousel/ohrana-sklada.jpeg" alt="Охорона примiщень" class="slider-image">
+                <p class="slider-card-title">Цілодобовий контроль та перевірка </p>
+              </div>
             </div>
           </div>
           <div class="slider__card swiper-slide" data-swiper-slide-index="2" role="group" aria-label="3 / 5">
             <div class="slider-card-body">
-              <p class="slider-card-title"> Підключайтесь до охорони без встановлення обладнання всього за 83 грн/міс.
+              <div class="slider-card">
+                <img src="images/carousel/pultovay-ohr.jpg" alt="Пультова охорона" class="slider-image">
+                <p class="slider-card-title"> Пультова охорона: під контролем 24/7
+              </div>
               </p>
             </div>
           </div>
           <div class="slider__card swiper-slide" data-swiper-slide-index="3" role="group" aria-label="4 / 5">
             <div class="slider-card-body">
-              <p class="slider-card-title"> Тривожна кнопка у вашому смартфоні. Отримайте 30 днів безкоштовно. </p>
+              <div class="slider-card">
+                <img src="images/carousel/trevozhnaja-signalizacija.png" alt="Тривожна кнопка" class="slider-image">
+                <p class="slider-card-title"> Ваш безпечний клік: кнопка тривоги 24/7 </p>
+              </div>
+            </div>
+          </div>
+          <div class="slider__card swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group"
+            aria-label="1 / 5">
+            <div class="slider-card-body">
+              <div class="slider-card">
+                <img src="images/carousel/montazh-videonablyudeniya_resize.jpg" alt="Монтаж , монтаж камер"
+                  class="slider-image">
+                <p class="slider-card-title"> Монтаж відеоспостереження "під ключ" </p>
+              </div>
             </div>
           </div>
           <!-- <div class="slider__card swiper-slide" data-swiper-slide-index="4" role="group" aria-label="5 / 5">
@@ -278,14 +314,15 @@
           <div class="contacts-form">
             <h3 class="contacts-form-title">У Вас виникли питання?</h3>
             <span class="constcts-form-subtitle">Безкоштовна консультація від нас</span>
-            <form action="#" class="constacts-form-inner">
+            <form class="constacts-form-inner" id="contacts-form">
               <label class="visually-hidden" for="client_name">Name</label>
               <input type="text" name="client_name" class="contacts__form-input input" placeholder="Введіть ваше ім'я*">
               <label class="visually-hidden" for="client_phone">Email</label>
               <input type="tel" name="client_phone" class="contacts__form-input input"
                 placeholder="Введіть ваш номер телефону*">
-              <textarea class="contacts__form-textarea input" placeholder="Повідомлення*"></textarea>
-              <button data-session-city="Київ" class="contacts__form-btn button transparent">Надіслати</button>
+              <textarea name="message" class="contacts__form-textarea input" placeholder="Повідомлення*"></textarea>
+              <button data-session-city="Київ" class="contacts__form-btn button transparent"
+                type="submit">Надіслати</button>
             </form>
           </div>
         </div>
@@ -293,10 +330,10 @@
           <div class="contatcs-info">
             <div class="contatcs-location">
               <span class="contatcs-location-title">Адреса</span>
-              <address class="contacts-location-address">Київ, вул. Сосницька 1/44</address>
+              <address class="contacts-location-address">Болград, пров. Кутова 1</address>
             </div>
             <div class="contacts-phone"><span class="contacts-phone-title">Телефон</span>
-              <a href="tel:0800309114" class="contacts-phone-value"> 0 800 309 114</a>
+              <a href="tel:0800309114" class="contacts-phone-value">+38093 2999 636</a>
             </div>
           </div>
         </div>
@@ -325,18 +362,18 @@
 
         <div class="footer-phone">
           <span class="footer-phone-title">Телефон</span>
-          <a href="tel:0800309114" class="footer-phone-value text-footer"> 0 800 309 114</a>
+          <a href="tel:+380932999636" class="footer-phone-value text-footer">+38093 2999 636</a>
         </div>
 
         <div class="fooetr-location">
           <span class="footer-location-title">Адреса </span>
-          <address class="footer-location-address text-footer">Київ, вул. Сосницька 1/44</address>
-          <span class="footer-location-worktime text-footer">Офіс: 9:00 - 18:00</span>
+          <address class="footer-location-address text-footer">Болград, пров. Кутова 1</address>
+          <span class="footer-location-worktime text-footer">Офіс: 8:00 - 18:00</span>
         </div>
       </div>
 
       <div class="footer-bottom ">
-        <span class="copyright">© Copyright © 2007-2024 ТОВ Стрiлець - Всі права захищенні.<br> Копіювання матеріалів
+        <span class="copyright">© Copyright © 2007-2025 ТОВ Стрiлець - Всі права захищенні.<br> Копіювання матеріалів
           тільки з посиланням на сайт </span>
         <div class="footer-socials">
           <span class="footer-socials-title">Соціальні <br> медіа</span>
@@ -357,7 +394,8 @@
       </div>
     </div>
   </footer>
-  <script type="module" src="./src/main.js"></script>
+  <script type="module" defer src="./src/main.js"></script>
+  <script type="module" defer src="./src/util/form.js"></script>
 </body>
 
 </html>
