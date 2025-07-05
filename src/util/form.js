@@ -1,5 +1,5 @@
 const tg = {
-  token: "7662422792:AAEkk47EEd1YwXmzP3huCaPfLPfPWXGVxjw",
+  token: process.env.MY_SECRET_KEY,
   chat_id: "1010054584",
 };
 
