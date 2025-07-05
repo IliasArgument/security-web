@@ -7,7 +7,12 @@ document
     const name = form.client_name.value.trim();
     const phone = form.client_phone.value.trim();
     const message = form.message.value.trim();
-    console.log(`Новое сообщение:\nИмя: ${name}\nТелефон: ${phone}\nСообщение: ${message}`)
+
+    if (!name || !phone || !message) {
+      alert("Пожалуйста, заполните все поля.");
+      return; // Не отправляем запрос
+    }
+
     try {
       const res = await fetch("/api/send-message.js", {
         method: "POST",

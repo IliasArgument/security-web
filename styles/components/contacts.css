@@ -64,6 +64,10 @@
   margin-bottom: 20px;
 }
 
+.contacts-address-value {
+  color: var(--color-yellow);
+}
+
 .contacts-phone-value {
   color: var(--color-yellow);
 }
@@ -84,7 +88,7 @@
   }
 
   .contatcs-info {
-    flex-direction: row;
+    /* flex-direction: row; */
     gap: 20px;
   }
 
@@ -122,8 +126,18 @@
     margin-bottom: 20px;
   }
 
-  .contacts__form-textarea    {
+  .contacts__form-textarea {
     margin-bottom: 20px;
-    display: block    ;
+    display: block;
   }
+
+
+  .contacts-address-value {
+    font-size: var(--size-sm);
+  }
+
+  .contacts-phone-value {
+    font-size: var(--size-sm);
+  }
+
 }
