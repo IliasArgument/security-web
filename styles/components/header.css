@@ -3,7 +3,6 @@
   flex-direction: column;
   column-gap: 20px;
   min-height: var(--header-height);
-  /* background-color: var(--color-dark-alternate); */
 }
 
 .header-container {
@@ -17,9 +16,8 @@
 .header-contacts {
   display: flex;
   align-items: end;
-  column-gap: 10px;
+  column-gap: 20px;
   color: var(--color-blue);
-  /* margin-bottom: 1rem; */
 }
 
 .header-logo {
@@ -28,19 +26,16 @@
   height: var(--header-height);
   align-items: center;
   display: flex;
-  /* margin-top: 1rem; */
 }
 
 .header__phone {
   display: block;
-}
-
-.header__icon-tg {
+  color: var(--color-blue);
 }
 
 .header-logo-image {
-  width: 85px;
-  height: 95px;
+  width: 95px;
+  height: 110px;
   position: absolute;
   top: .5rem;
   margin: 0;
@@ -48,7 +43,25 @@
   display: block;
 }
 
-.header__phone {
+.header__phone-link {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: .3rem;
+}
+
+.contacts-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.contacts-icon-tg {
+  width: 37px;
+  height: 37px;
+}
+
+.header__phone-text {
   font-size: var(--size-xl);
   font-weight: 700;
   line-height: 1.65;
@@ -104,7 +117,6 @@
   aspect-ratio: 1;
   padding-left: 8px;
   color: var(--color-dark);
-  /* background-color: transparent; */
   background-color: var(--color-light);
   border: var(--border-dark);
   border-radius: 50%;

@@ -70,6 +70,9 @@
 
 .contacts-phone-value {
   color: var(--color-yellow);
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 @media screen and (max-width: 991px) {
@@ -132,12 +135,12 @@
   }
 
 
-  .contacts-address-value {
+  /* .contacts-address-value {
     font-size: var(--size-sm);
-  }
+  } */
 
-  .contacts-phone-value {
+  /* .contacts-phone-value {
     font-size: var(--size-sm);
-  }
+  } */
 
 }
