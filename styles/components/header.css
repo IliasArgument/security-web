@@ -3,6 +3,7 @@
   flex-direction: column;
   column-gap: 20px;
   min-height: var(--header-height);
+  padding-top: 10px;
 }
 
 .header-container {
@@ -107,7 +108,7 @@
 
 .header-burger-button {
   position: fixed;
-  top: 2rem;
+  top: 1.3rem;
   right: 2rem;
   display: inline-flex;
   flex-direction: column;
