@@ -28,7 +28,7 @@
 }
 
 .hero-description {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: var(--size-3xl);
   line-height: 1.25;
   display: inline-block;
