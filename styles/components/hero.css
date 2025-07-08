@@ -120,6 +120,7 @@
 
   .hero-pre-title {
     padding: 5px;
+    font-size: var(--size-xl);
   }
 }
 
